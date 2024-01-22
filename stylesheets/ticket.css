@@ -1,0 +1,176 @@
+.ticket-wrapper {
+    display: flex;
+}
+
+.tickets {
+    width: 100%;
+}
+
+.ticket {
+    margin: 1em;
+    padding: 1em 0;
+    display: flex;
+    background-color: white;
+    flex: auto;
+    font-family: Futura, monospace, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid lightgray;    
+    box-shadow: 0 3px 9px 0 rgba(0,0,0,.06);
+}
+
+.ticket-header {
+    background-color: #384550;
+    color: white;
+    padding: 3em 1em;
+    text-align: center;
+}
+
+#date-selection {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#date-selection > label {
+    margin: 1em 0;
+}
+
+#ticket-date {
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.ticket-title {
+    padding-left: 1em;
+    font: 700 24px/30px "Walibi",Arial,sans-serif;
+    font-size: 1.47281em;
+    color: rgb(205, 167, 32);
+    max-width: 246px;
+}
+
+.ticket-price p {
+    margin: 0;
+}
+
+.ticket-price > .number {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ticket-price > .number span {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.ticket-price > .per-stuk {
+    color: #b3b3b3;
+    font: 400 12px/18px "Walibi",Arial,sans-serif;
+}
+
+.ticket-info {
+    padding: 1em;
+    border-top: 1px solid lightgray;    
+}
+
+.ticket-info-button {
+    padding-right: 1em;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.ticket-info-button:hover {
+    cursor: pointer;
+}
+
+
+.display-none {
+    display: none;
+}
+
+
+.order {
+    background-color: white;
+    width: 326px;
+    border-left: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.order-title {
+    margin: 1em 0;
+    padding-bottom: 1em;
+    width: 100%;
+    font-weight: bold;
+    border-bottom: 5px solid gray;
+    font-family: Walibi;
+}
+
+.order-tickets {
+    width: 100%;
+}
+
+.order-ticket {
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.order-ticket > p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-ticket-title {
+    font-weight: 500;
+}
+
+.order-ticket-date {
+    color: gray;
+}
+
+.order-ticket-price {
+    font-weight: bold;
+}
+
+.order-amount {
+    margin-left: auto;
+}
+
+.order-total {
+    background-color: #f81700;
+    width: 100%;
+    padding: 1em;
+    color: white;
+    font-size: 18px;
+
+}
+
+.order-button {
+    height: fit-content;
+    background-color: #f81700;
+    border-radius: 30px;
+    padding: 1em;
+    border: none;
+    color: white;
+    font-size: large;
+    font: 700 18px/37px Walibi;
+    line-height: 24px;
+}
+
+.order-button:hover {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 767px) {
+    .ticket-wrapper {
+        flex-wrap: wrap;
+    }
+}

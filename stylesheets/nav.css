@@ -1,0 +1,78 @@
+nav {
+    background-color: white;
+    display: flex;
+    border-bottom: #dee2e6 solid 1px;    
+    font: 500 12px Futura, monospace, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    max-width: 1280px;
+}
+
+nav > .nav-link {
+    padding: 1em;
+    margin: auto;
+}
+nav > .nav-link > a {
+    letter-spacing: 1px;
+    position: relative;
+    padding: 9px 5px;
+    color: rgb(51, 51, 51);
+}
+
+nav > .nav-button {
+    height: 100%;
+    margin: 0;
+}
+
+nav > .nav-button > a {
+    height: 100%;
+    padding: 2em;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    background-color: #f81700;
+    color: white;
+    transition: .25s ease;
+}
+
+nav > .nav-button > a:hover {
+    background-color: #dc1400;
+}
+
+.nav-logo {
+    height: 100%;
+    border-right: #dee2e6 solid 1px;
+}
+
+.nav-logo img {
+    padding: 1em;
+    max-height: 34px;
+}
+
+nav > .nav-link:hover {
+    opacity: .7;
+}
+nav > .nav-link:hover > a:after {
+    width: 100%;
+}
+
+nav > .nav-link > a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #333;
+    transition: width .25s;
+}
+
+
+@media (max-width: 767px) {
+    nav {
+        flex-wrap: wrap;
+    }
+}

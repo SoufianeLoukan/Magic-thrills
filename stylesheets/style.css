@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Futura;
+    src: url("../media/fonts/futura/futura.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: Futura;
+    src: url("../media/fonts/futura/futura-bold.woff2") format('woff2');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url("../media/fonts/futura/futura-medium.woff2") format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url("../media/fonts/futura/futura-light.woff2") format('woff2');
+    font-weight: light;
+}
+
+@font-face {
+    font-family: Walibi;
+    src: url("../media/fonts/walibi/walibi.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: Walibi;
+    src: url("../media/fonts/walibi/walibi-bold.woff2") format('woff2');
+    font-weight: bold;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Futura, monospace, sans-serif;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    padding-top: 65px;
+}
+
+h1,h2,h3,h4 {
+    font-family: Walibi, monospace, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+footer {
+    background-color: #fafafa;
+    margin-top: auto;
+}
+
+.header-img {
+    height: 370px;
+    overflow: hidden;
+    
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65), #0000), url("../media/Families_-_Walibi_Holland.jpg");
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
